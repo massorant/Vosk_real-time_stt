@@ -13,7 +13,7 @@ def get_input_device_index():
     if select_input_device == 2:
         dev_status = "BlackHole"
     else:
-        dev_status = "麦克风"
+        dev_status = "Air麦克风"
     devices = sd.query_devices()
     for idx, device in enumerate(devices):
         if dev_status in device['name']:
